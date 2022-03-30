@@ -4,10 +4,12 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
+import Header from "./components/header.js";
+import Footer from "./components/footer.js";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -19,20 +21,23 @@ function App() {
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="#" class="nav-link">Home</a>
+            <a href={Home} className="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href={About} className="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
+            <a href={Projects} className="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href={Contact} className="nav-link">Contact</a>
           </li>
         </ul>
       </nav> */}
+      {/* <Navbar /> */}
+      <Header />
       <Home />
+      <Footer />
     </div>
   );
 }
