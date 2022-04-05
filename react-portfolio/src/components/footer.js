@@ -1,5 +1,3 @@
-import React from "react";
-
 const date = new Date();
 const copy = "Copyright @ " + date.getFullYear();
 
