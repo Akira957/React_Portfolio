@@ -1,15 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import About from "Pages/About";
-import Home from "Pages/Home";
-import Contact from "Pages/Contact";
-import Projects from "Pages/Projects";
+import { NavLink } from "react-router-dom";
 
 class navbar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <div className="navbar-container">
+                {/* <div className="navbar-container">
                     <div className="navbar-logo">
                         <a href="https://www.linkedin.com/in/joshua-w-barnes-b7b8a8a6/">
                             <img
@@ -32,7 +28,7 @@ class navbar extends React.Component {
                             Home
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

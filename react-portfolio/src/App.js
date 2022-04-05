@@ -1,16 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Navbar from "./components/navbar.js";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
-import Header from "./components/header.js";
-import Footer from "./components/footer.js";
 
 function App() {
   return (
-    <div>
-      {/* <div class="menu-btn">
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/projects" element={<Projects />} />
+        {/* <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -34,11 +38,12 @@ function App() {
           </li>
         </ul>
       </nav> */}
-      {/* <Navbar /> */}
-      <Header />
+        {/* <Navbar /> */}
+        {/* <Header />
       <Home />
-      <Footer />
-    </div>
+      <Footer /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
