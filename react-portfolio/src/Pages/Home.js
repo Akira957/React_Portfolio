@@ -7,7 +7,7 @@ function Home() {
         <div className="home">
             <Header />
             <h1 className="lg-heading">Robert <span className="text-secondary">Ramirez</span></h1>
-            <h2 className="sm-heading">Web Devloper, Programer, and Designer</h2>
+            <h2 className="sm-heading">Web Developer, Programer, and Designer</h2>
             <div className="icons">
                 <i href="https://www.linkedin.com/in/robert-s-ramirez/">
                     <img src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png" alt="linkedin" />
