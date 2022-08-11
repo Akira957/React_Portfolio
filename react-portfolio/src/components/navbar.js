@@ -29,6 +29,20 @@ class navbar extends React.Component {
                         </a>
                     </div>
                 </div> */}
+                <nav>
+                <NavLink to="/" exact="true">
+                    Home Page
+                </NavLink>
+                <NavLink to="/about">
+                   About Me!
+                </NavLink>
+                <NavLink to="/contact">
+                    Contact Information
+                </NavLink>
+                <NavLink to="/projects">
+                    Projects 
+                </NavLink>
+                </nav>
             </div>
         );
     }
